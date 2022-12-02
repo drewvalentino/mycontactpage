@@ -67,7 +67,6 @@ html, body {
   background-position: center;
   text-align: center;
 }
-
 .center {
     width: 60%; /*--This is for responsiveness--*/
 	min-width: 300px;  /*--This is for responsiveness--*/
@@ -78,11 +77,11 @@ html, body {
 	border-radius: 25px 25px 25px 25px;
 
 	/*---This is my fade in code---*/
-	animation: fadeIn 3s;
-	-webkit-animation: fadeIn 3s;
-	-moz-animation: fadeIn 3s;
-	-o-animation: fadeIn 3s;
-	-ms-animation: fadeIn 3s;
+	animation: fadeIn 5s;
+	-webkit-animation: fadeIn 5s;
+	-moz-animation: fadeIn 5s;
+	-o-animation: fadeIn 5s;
+	-ms-animation: fadeIn 5s;
 	/*border: 4px dashed white*/
 }
 @keyframes fadeIn {
@@ -102,14 +101,34 @@ html, body {
 	100% {opacity: 1;}
 }
 	/*---End of my fade in code---*/
-   
+		
 #logo {
 	width: 40%; /*--This is for responsiveness--*/
-    margin-top: 100px;
+    margin-top: 50px;
 	margin-bottom: 16px;
 	/* border: 3px dashed red*/
 	text-align: center;
 }
+#curvedarrow {
+	position: center;
+	width: 0;
+	height: 0;
+	border-top: 9px solid transparent;
+	border-right: 9px solid red;
+	transform: rotate(10deg);
+  }
+  #curvedarrow:after {
+	content: "";
+	position: center;
+	border: 0 solid transparent;
+	border-top: 3px solid red;
+	border-radius: 20px 0 0 0;
+	top: -12px;
+	left: -9px;
+	width: 12px;
+	height: 12px;
+	transform: rotate(45deg);
+  }
 h1 {
 	font-family: 'Nerko One', cursive;
 	font-size: 2em;
@@ -124,17 +143,19 @@ h2 {
     padding: 0px 0px;
     margin: 25px auto 25px auto;
 }
-
-/*---The following text will be white/contrasting---*/
-
 p {
 	font-family: 'Playfair Display', serif;
     font-size: 1.4em;
     line-height: 1.6;
-    color: white;
+    color: black;
     }
-
-/*---end of text contrast---*/
+/*---The following text will be white/contrasting---*/
+h3 {
+	font-family: 'Nerko One', cursive;
+    font-size: 1.4em;
+    line-height: 1.6;
+    color: white;
+}
 
 nav {
 	font-family: 'Playfair Display', serif;
@@ -162,3 +183,5 @@ a:hover {
 	color: yellowgreen;
 	background: black;
 }
+
+/*---end of text contrast---*/
